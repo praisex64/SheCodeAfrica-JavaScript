@@ -32,7 +32,7 @@ import { taskFirst, taskNext } from './0-constants.js';
 console.log(`${taskFirst()} ${taskNext()}`);
 
 don@joe:~$ 
-don@joe:~$ npm run dev 0-main.js 
+don@joe:~$ npm run dev index.js 
 I prefer const when I can. But sometimes let is okay
 don@joe:~$ 
 
