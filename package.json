@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "name": "shecodeafrica-javascript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node 6-main.js"
+  }
+}
