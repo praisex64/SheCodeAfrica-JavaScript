@@ -393,3 +393,105 @@ Repo:
     Directory: ES6_basics
     File: 10-Javascript_course.js
 
+## Setup
+
+1. Setup Node.js Environment
+
+Make sure you have Node.js installed on your system. Verify by running:
+
+```bash
+node -v
+npm -v
+
+```
+
+2. Create a Project Directory
+
+Create a directory for your project and initialize a Node.js project:
+
+```bash 
+mkdir shecode-africa-backend
+cd shecode-africa-backend
+npm init -y
+
+```
+
+3. Install Babel for ES6 Syntax
+
+Since some tasks use ES6 syntax, set up Babel to transpile the code:
+
+```bash
+npm install @babel/core @babel/cli @babel/preset-env --save-dev
+
+```
+
+4. Configure Babel
+
+Create a .babelrc file in the root directory with the following content:
+
+```bash
+{
+  "presets": ["@babel/preset-env"]
+}
+
+```
+
+5. Add Scripts in package.json
+
+Modify the scripts section in your package.json to include a development script:
+
+```bash 
+"scripts": {
+  "dev": "node --loader @babel/register"
+}
+
+```
+
+6. Write Your Files
+
+Organize your project files based on the repo structure described:
+
+    Directory structure:
+
+    ```bash 
+
+    shecode-africa-backend/
+├── ES6_basics/
+│   ├── 0-constants.js
+│   ├── 1-arrow.js
+│   ├── 2-default-parameter.js
+│   ├── 4-string-interpolation.js
+│   ├── 5-getBudgetObject.js
+│   ├── 6-get_list_students.js
+│   ├── 7-get_students_by_loc.js
+│   ├── 8-get_ids_sum.js
+│   ├── 9-get_list_student_ids.js
+│   ├── 10-Javascript_course.js
+├── 0-main.js
+├── 1-main.js
+├── 3-main.js
+├── 4-main.js
+├── 5-main.js
+├── 6-main.js
+├── 7-main.js
+├── 8-main.js
+├── 9-main.js
+├── 10-main.js
+└── package.json
+└── .babelrc               # Babel configuration file
+
+
+    ```
+
+
+7. Run Tests
+
+To test each task, navigate to the root directory and use the npm run dev command followed by the main file name. 
+
+For example:
+
+```bash 
+npm run dev ES6_basics/0-main.js
+npm run dev ES6_basics/1-main.js
+
+```
