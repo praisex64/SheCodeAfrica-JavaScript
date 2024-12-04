@@ -10,3 +10,4 @@ export default function getSanFranciscoDescription() {
     with a per capita personal income of ${budget.income}. Its GDP was ${budget.gdp}, 
     and its GDP per capita was ${budget.capita}.`;
 }
+
